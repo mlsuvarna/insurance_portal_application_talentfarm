@@ -83,7 +83,7 @@ public class PolicyService {
 
         LocalDate startDate = LocalDate.now();
         LocalDate endDate = startDate
-                .plusYears(1)
+                .plusMonths(policyType.getTenureMonths())
                 .minusDays(1);
 
         Policy policy = new Policy(

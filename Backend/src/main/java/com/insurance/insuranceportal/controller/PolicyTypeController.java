@@ -80,8 +80,10 @@ public class PolicyTypeController {
                 policyType.getPolicyTypeId(),
                 policyType.getTypeName(),
                 policyType.getDescription(),
+                policyType.getCategory(),
                 policyType.getBasePremium(),
                 policyType.getDefaultCoverageAmount(),
+                policyType.getTenureMonths(),
                 policyType.isActive(),
                 "Policy type retrieved successfully"
         );

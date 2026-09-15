@@ -51,6 +51,16 @@ public class PolicyTypeRequest {
     @NotNull(message = "Active status is required")
     private Boolean active;
 
+    @NotBlank(message = "Product category is required")
+    @Size(
+            max = 100,
+            message = "Product category cannot exceed 100 characters"
+    )
+    private String category;
+
+    @NotNull(message = "Policy tenure is required")
+    private Integer tenureMonths;
+
     public PolicyTypeRequest() {
     }
 
@@ -95,5 +105,21 @@ public class PolicyTypeRequest {
 
     public void setActive(Boolean active) {
         this.active = active;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
+    public Integer getTenureMonths() {
+        return tenureMonths;
+    }
+
+    public void setTenureMonths(Integer tenureMonths) {
+        this.tenureMonths = tenureMonths;
     }
 }

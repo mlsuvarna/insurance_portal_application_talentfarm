@@ -55,6 +55,19 @@ public class PolicyType {
     )
     private boolean active;
 
+    @Column(
+            name = "category",
+            nullable = false,
+            length = 100
+    )
+    private String category = "GENERAL";
+
+    @Column(
+            name = "tenure_months",
+            nullable = false
+    )
+    private Integer tenureMonths = 12;
+
     public PolicyType() {
     }
 
@@ -115,6 +128,24 @@ public class PolicyType {
 
     public void setActive(boolean active) {
         this.active = active;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
+    public Integer getTenureMonths() {
+        return tenureMonths;
+    }
+
+    public void setTenureMonths(
+            Integer tenureMonths
+    ) {
+        this.tenureMonths = tenureMonths;
     }
 
 }

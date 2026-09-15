@@ -1,0 +1,89 @@
+.form-page {
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.form-card {
+  padding: 28px;
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.form-card h1 {
+  margin-top: 0;
+  margin-bottom: 24px;
+  color: #212529;
+}
+
+.form-field {
+  margin-bottom: 18px;
+}
+
+.form-field label {
+  display: block;
+  margin-bottom: 8px;
+  color: #343a40;
+  font-weight: 600;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+  width: 100%;
+  padding: 10px 12px;
+  box-sizing: border-box;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  background-color: #ffffff;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+  border-color: #0d6efd;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.15);
+}
+
+.form-button {
+  width: 100%;
+  padding: 11px 16px;
+  font-weight: 600;
+}
+
+.form-button:disabled {
+  cursor: not-allowed;
+  background-color: #6c757d;
+  opacity: 0.7;
+}
+
+.form-message {
+  margin-bottom: 18px;
+  padding: 12px;
+  color: #084298;
+  background-color: #cfe2ff;
+  border: 1px solid #b6d4fe;
+  border-radius: 6px;
+}
+
+.form-empty-message {
+  margin-top: 18px;
+  color: #6c757d;
+  text-align: center;
+}
+.policy-date-info {
+  margin-top: 14px;
+  padding: 12px 14px;
+  color: #084298;
+  background-color: #e7f1ff;
+  border: 1px solid #b6d4fe;
+  border-radius: 6px;
+}
+
+.policy-date-info p {
+  margin: 5px 0;
+  line-height: 1.5;
+}

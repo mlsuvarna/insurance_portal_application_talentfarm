@@ -1,0 +1,40 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 24px;
+  background-color: #0d6efd;
+  color: white;
+  border-bottom: 1px solid #0b5ed7;
+}
+
+.navbar-brand {
+  margin: 0 auto 0 0;
+  color: white;
+}
+
+.navbar a {
+  color: white;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  color: #e9ecef;
+  text-decoration: none;
+}
+
+.navbar-role {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.navbar-logout {
+  background-color: white;
+  color: #0d6efd;
+  border: 1px solid white;
+}
+
+.navbar-logout:hover {
+  background-color: #e9ecef;
+  color: #0b5ed7;
+}

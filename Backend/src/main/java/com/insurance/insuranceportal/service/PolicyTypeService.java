@@ -39,6 +39,16 @@ public class PolicyTypeService {
                 request.getActive()
         );
 
+        policyType.setCategory(
+                request.getCategory()
+                        .trim()
+                        .toUpperCase()
+        );
+
+        policyType.setTenureMonths(
+                request.getTenureMonths()
+        );
+
         PolicyType savedPolicyType =
                 policyTypeRepository.save(policyType);
 
@@ -46,8 +56,10 @@ public class PolicyTypeService {
                 savedPolicyType.getPolicyTypeId(),
                 savedPolicyType.getTypeName(),
                 savedPolicyType.getDescription(),
+                savedPolicyType.getCategory(),
                 savedPolicyType.getBasePremium(),
                 savedPolicyType.getDefaultCoverageAmount(),
+                savedPolicyType.getTenureMonths(),
                 savedPolicyType.isActive(),
                 "Policy type created successfully"
         );
